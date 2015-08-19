@@ -14,10 +14,9 @@ import java.util.Map;
 public class UnknownStructureParser {
 
     public Map<String, String> px(File file) throws Exception {
-
+        String name = "", value = "", attrName = "";
         Map<String, String> map = new HashMap<>();
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
-        String name = "", value = "", attrName = "";
 
         while (xr.hasNext()) {
             int e = xr.next();
@@ -56,8 +55,8 @@ public class UnknownStructureParser {
                 String value = null;
                 try {
                     value = xr.getText();
-                } catch (IllegalStateException exep) {
-                    exep.printStackTrace();
+                } catch (IllegalStateException ex) {
+                    ex.printStackTrace();
                 }
                 map.put(name, value);
             }
