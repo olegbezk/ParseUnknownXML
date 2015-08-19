@@ -11,16 +11,16 @@ import java.util.Map;
 
 /**
  * Created by Oleg on 19 Aug 2015.
- *
  */
 
 public class UnknownStructureParser {
 
     final static Logger logger = Logger.getLogger(UnknownStructureParser.class);
 
-    public Map<String, String> parseXml(File file) throws Exception {
+    public Stack<Map<String, String>> parseXml(File file) throws Exception {
         String name = "", value = "", attrName;
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = newHashMap();
+        Stack<Map<String, String>> rows = new Stack<>();
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
 
         while (xr.hasNext()) {
@@ -38,12 +38,14 @@ public class UnknownStructureParser {
                 }
                 case XMLStreamReader.CHARACTERS: {
                     value = xr.getText();
+                    System.out.println(value);
+                    map.put(name, value);
+                    rows.push(map);
                     break;
                 }
             }
-            map.put(name, value);
         }
-        return map;
+        return rows;
     }
 
     public Map<String, String> parse(File file) throws Exception {
@@ -51,7 +53,7 @@ public class UnknownStructureParser {
         Map<String, String> map = new HashMap<>();
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
 
-        while(xr.hasNext()) {
+        while (xr.hasNext()) {
             int e = xr.next();
             if (e == XMLStreamReader.START_ELEMENT) {
                 String name = xr.getLocalName();
@@ -66,5 +68,9 @@ public class UnknownStructureParser {
             }
         }
         return map;
+    }
+
+    private <K, V> Map<K, V> newHashMap() {
+        return new HashMap<>();
     }
 }
