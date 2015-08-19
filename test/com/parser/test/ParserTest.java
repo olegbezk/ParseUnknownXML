@@ -23,10 +23,9 @@ public class ParserTest {
     private UnknownStructureXmlParser parser = new UnknownStructureXmlParser();
 
     @Test
-    public void testCurr() throws FactoryConfigurationError, Exception {
+    public void testFullParsing() throws FactoryConfigurationError, Exception {
 
         File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
-
         Stack<Map<String, String>> rowStack = parser.parseXml(file);
 
         while (!rowStack.isEmpty()) {
@@ -41,11 +40,11 @@ public class ParserTest {
     }
 
     @Test
-    public void testPrev() throws FactoryConfigurationError, Exception {
+    public void testPrevious() throws FactoryConfigurationError, Exception {
+
         File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
         Map<String, String> map = parser.parse(file);
 
-        // Print all Key/Value pairs
         for (Map.Entry<String, String> entry : map.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();

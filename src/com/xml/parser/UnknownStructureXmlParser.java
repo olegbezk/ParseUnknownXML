@@ -34,14 +34,14 @@ public class UnknownStructureXmlParser {
                     if (attributeCount > 0) {
                         attrName = xr.getAttributeName(0).getLocalPart();
                         final String attributeValue = xr.getAttributeValue(0);
-                        //System.out.println(name + " " + attrName + " " + attributeValue);
+                        System.out.println(name + " " + attrName + " " + attributeValue);
                     }
                     break;
                 }
                 case XMLStreamReader.CHARACTERS: {
                     Map<String, String> map = newHashMap();
                     value = xr.getText();
-                    //System.out.println(value);
+                    System.out.println(value);
                     map.put(name, value);
                     rows.push(map);
                     break;
