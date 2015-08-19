@@ -19,7 +19,8 @@ public class UnknownStructureXmlParser {
     final static Logger logger = Logger.getLogger(UnknownStructureXmlParser.class);
 
     public Stack<Map<String, String>> parseXml(File file) throws Exception {
-        String name = "", value, attrName;
+
+        String name = "", value;
 
         Stack<Map<String, String>> rows = new Stack<>();
 
@@ -30,18 +31,11 @@ public class UnknownStructureXmlParser {
             switch (e) {
                 case XMLStreamReader.START_ELEMENT: {
                     name = xr.getLocalName();
-                    final int attributeCount = xr.getAttributeCount();
-                    if (attributeCount > 0) {
-                        attrName = xr.getAttributeName(0).getLocalPart();
-                        final String attributeValue = xr.getAttributeValue(0);
-                        System.out.println(name + " " + attrName + " " + attributeValue);
-                    }
                     break;
                 }
                 case XMLStreamReader.CHARACTERS: {
                     Map<String, String> map = newHashMap();
                     value = xr.getText();
-                    System.out.println(value);
                     map.put(name, value);
                     rows.push(map);
                     break;
