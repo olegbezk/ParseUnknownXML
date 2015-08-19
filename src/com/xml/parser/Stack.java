@@ -22,7 +22,7 @@ public class Stack<E>{
     }
 
     public void push(E e) {
-        enshureCapacity();
+        ensureCapacity();
         elements[size++] = e;
     }
 
@@ -51,7 +51,7 @@ public class Stack<E>{
         return size == 0;
     }
 
-    private void enshureCapacity() {
+    private void ensureCapacity() {
 
         if (elements.length == size) {
             elements = Arrays.copyOf(elements, 2 * size + 1);

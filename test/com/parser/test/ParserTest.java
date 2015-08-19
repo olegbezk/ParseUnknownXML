@@ -10,7 +10,7 @@ import javax.xml.parsers.FactoryConfigurationError;
 import java.io.File;
 import java.util.Map;
 
-import com.xml.parser.UnknownStructureParser;
+import com.xml.parser.UnknownStructureXmlParser;
 
 /**
  * Created by Oleg on 19 Aug 2015.
@@ -20,7 +20,7 @@ public class ParserTest {
 
     private final static Logger logger = Logger.getLogger(ParserTest.class);
 
-    private UnknownStructureParser parser = new UnknownStructureParser();
+    private UnknownStructureXmlParser parser = new UnknownStructureXmlParser();
 
     @Test
     public void testCurr() throws FactoryConfigurationError, Exception {
@@ -28,6 +28,7 @@ public class ParserTest {
         File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
 
         Stack<Map<String, String>> rowStack = parser.parseXml(file);
+
         while (!rowStack.isEmpty()) {
             Map<String, String> map = rowStack.pop();
             for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -37,10 +38,6 @@ public class ParserTest {
                 logger.debug("Value: " + value);
             }
         }
-//        Assert.assertEquals(map.get("MonthlyPlanPremiumAmtPP"), "136");
-//        Assert.assertEquals(map.get("MonthlyAdvancedPTCAmtPP"), "125");
-//        Assert.assertEquals(map.get("AdjustedGrossIncomeAmt"), "22000");
-//        Assert.assertEquals(map.get("TotalExemptionsCnt"), "1");
     }
 
     @Test

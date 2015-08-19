@@ -11,16 +11,18 @@ import java.util.Map;
 
 /**
  * Created by Oleg on 19 Aug 2015.
+ *
  */
 
-public class UnknownStructureParser {
+public class UnknownStructureXmlParser {
 
-    final static Logger logger = Logger.getLogger(UnknownStructureParser.class);
+    final static Logger logger = Logger.getLogger(UnknownStructureXmlParser.class);
 
     public Stack<Map<String, String>> parseXml(File file) throws Exception {
-        String name = "", value = "", attrName;
-        Map<String, String> map = newHashMap();
+        String name = "", value, attrName;
+
         Stack<Map<String, String>> rows = new Stack<>();
+
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
 
         while (xr.hasNext()) {
@@ -32,13 +34,14 @@ public class UnknownStructureParser {
                     if (attributeCount > 0) {
                         attrName = xr.getAttributeName(0).getLocalPart();
                         final String attributeValue = xr.getAttributeValue(0);
-                        System.out.println(name + " " + attrName + " " + attributeValue);
+                        //System.out.println(name + " " + attrName + " " + attributeValue);
                     }
                     break;
                 }
                 case XMLStreamReader.CHARACTERS: {
+                    Map<String, String> map = newHashMap();
                     value = xr.getText();
-                    System.out.println(value);
+                    //System.out.println(value);
                     map.put(name, value);
                     rows.push(map);
                     break;
