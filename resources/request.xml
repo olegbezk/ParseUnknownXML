@@ -1,0 +1,101 @@
+<Return xmlns="http://www.irs.gov/efile">
+    <ReturnData>
+        <IRS1095A uuid="a77f40a2-af31-4404-a27d-4c1eaad730c2">
+            <MonthlyPTCInformationGrpPP uuid="69dc9dd5-5415-4ee4-a199-19b2dbb701be">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthCdPP>SEPTEMBER</MonthCdPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="8495fa61-0e7c-45e3-8f07-9765f4ef2fc3">
+                <MonthCdPP>OCTOBER</MonthCdPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="7de1052f-6107-41da-aea4-e4495018fc80">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthCdPP>APRIL</MonthCdPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="634d5af9-51fb-42ee-a90d-5a4f421e6854">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthCdPP>JUNE</MonthCdPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="a2f7de3f-650c-4a5e-b26c-30cfd7782d6c">
+                <MonthCdPP>MAY</MonthCdPP>
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="a77f40a2-af31-4404-a27d-4c1eaad730c2">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthCdPP>JANUARY</MonthCdPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="01650aee-9d5d-4ce1-9079-ebedea3bf416">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthCdPP>MARCH</MonthCdPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="581ba189-222d-4999-aa1a-3b290666ef5f">
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthCdPP>AUGUST</MonthCdPP>
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <TotalPremiumSLCSPAmtPP>3000</TotalPremiumSLCSPAmtPP>
+            <MonthlyPTCInformationGrpPP uuid="549ff57a-58dc-4365-b05c-e3e520b3e8cb">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+                <MonthCdPP>DECEMBER</MonthCdPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="195836cf-32b3-4316-99d4-6b1eab31e16d">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthCdPP>JULY</MonthCdPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <MonthlyPTCInformationGrpPP uuid="c1289d91-7ce1-41ee-9c8a-f72212e82752">
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthCdPP>FEBRUARY</MonthCdPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <TotalAdvancedPTCAmtPP>1500</TotalAdvancedPTCAmtPP>
+            <RecipientSSNPP>555-11-2222</RecipientSSNPP>
+            <MonthlyPTCInformationGrpPP uuid="50876222-165d-442a-81e0-0b05dc3c30fb">
+                <MonthlyAdvancedPTCAmtPP>125</MonthlyAdvancedPTCAmtPP>
+                <MonthlyPlanPremiumAmtPP>136</MonthlyPlanPremiumAmtPP>
+                <MonthCdPP>NOVEMBER</MonthCdPP>
+                <MonthlyPremiumSLCSPAmtPP>250</MonthlyPremiumSLCSPAmtPP>
+            </MonthlyPTCInformationGrpPP>
+            <TotalPlanPremiumAmtPP>1632</TotalPlanPremiumAmtPP>
+        </IRS1095A>
+        <IRS1040>
+            <IndividualReturnFilingStatusCd>1</IndividualReturnFilingStatusCd>
+            <WagesSalariesAndTipsAmt>22000</WagesSalariesAndTipsAmt>
+            <TotalExemptionsCnt>1</TotalExemptionsCnt>
+            <AdjustedGrossIncomeAmt>22000</AdjustedGrossIncomeAmt>
+        </IRS1040>
+    </ReturnData>
+    <ReturnHeader>
+        <SelfSelectPINGrp>
+            <PrimaryBirthDt>1970-01-01</PrimaryBirthDt>
+        </SelfSelectPINGrp>
+        <Filer>
+            <PrimarySSN>555-11-2222</PrimarySSN>
+            <PrimaryResidentStatesInfoGrpPP>
+                <ResidentStateInfoPP uuid="a77f40a2-af31-4404-a27d-4c1eaad730c2">
+                    <ResidentStateAbbreviationCdPP>CA</ResidentStateAbbreviationCdPP>
+                </ResidentStateInfoPP>
+            </PrimaryResidentStatesInfoGrpPP>
+        </Filer>
+    </ReturnHeader>
+</Return>
