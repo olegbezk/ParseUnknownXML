@@ -1,5 +1,7 @@
 package com.xml.parser;
 
+import org.apache.log4j.Logger;
+
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 import java.io.File;
@@ -9,12 +11,15 @@ import java.util.Map;
 
 /**
  * Created by Oleg on 19 Aug 2015.
+ *
  */
 
 public class UnknownStructureParser {
 
-    public Map<String, String> px(File file) throws Exception {
-        String name = "", value = "", attrName = "";
+    final static Logger logger = Logger.getLogger(UnknownStructureParser.class);
+
+    public Map<String, String> parseXml(File file) throws Exception {
+        String name = "", value = "", attrName;
         Map<String, String> map = new HashMap<>();
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
 
@@ -40,14 +45,13 @@ public class UnknownStructureParser {
         }
         return map;
     }
-    public Map<String, String> pz(File file) throws Exception {
+
+    public Map<String, String> parse(File file) throws Exception {
 
         Map<String, String> map = new HashMap<>();
         XMLStreamReader xr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(file));
 
-
         while(xr.hasNext()) {
-
             int e = xr.next();
             if (e == XMLStreamReader.START_ELEMENT) {
                 String name = xr.getLocalName();
@@ -56,7 +60,7 @@ public class UnknownStructureParser {
                 try {
                     value = xr.getText();
                 } catch (IllegalStateException ex) {
-                    ex.printStackTrace();
+                    logger.warn(ex);
                 }
                 map.put(name, value);
             }

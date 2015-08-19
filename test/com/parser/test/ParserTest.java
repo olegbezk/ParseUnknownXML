@@ -23,8 +23,8 @@ public class ParserTest {
 
     @Test
     public void testCurr() throws FactoryConfigurationError, Exception {
-        File f = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
-        Map<String, String> map = parser.px(f);
+        File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
+        Map<String, String> map = parser.parseXml(file);
 
         // Print all Key/Value pairs
         for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -42,8 +42,8 @@ public class ParserTest {
 
     @Test
     public void testPrev() throws FactoryConfigurationError, Exception {
-        File f = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
-        Map<String, String> map = parser.pz(f);
+        File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
+        Map<String, String> map = parser.parse(file);
 
         // Print all Key/Value pairs
         for (Map.Entry<String, String> entry : map.entrySet()) {
@@ -53,9 +53,9 @@ public class ParserTest {
             logger.debug("Value: " + value);
         }
 
-        Assert.assertEquals(map.get("MonthlyPlanPremiumAmtPP"), "136");
-        Assert.assertEquals(map.get("MonthlyAdvancedPTCAmtPP"), "125");
-        Assert.assertEquals(map.get("AdjustedGrossIncomeAmt"), "22000");
         Assert.assertEquals(map.get("TotalExemptionsCnt"), "1");
+        Assert.assertEquals(map.get("PrimaryBirthDt"), "1970-01-01");
+        Assert.assertEquals(map.get("MonthCdPP"), "NOVEMBER");
+        Assert.assertEquals(map.get("AdjustedGrossIncomeAmt"), "22000");
     }
 }
