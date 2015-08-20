@@ -52,7 +52,6 @@ public class Stack<E>{
     }
 
     private void ensureCapacity() {
-
         if (elements.length == size) {
             elements = Arrays.copyOf(elements, 2 * size + 1);
         }
