@@ -1,6 +1,7 @@
 /target/
 /bin/
 /build/
+/out/
 .idea/
 .settings/
 .project
