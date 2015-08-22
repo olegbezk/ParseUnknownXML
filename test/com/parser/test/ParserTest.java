@@ -25,7 +25,7 @@ public class ParserTest {
     @Test
     public void testFullParsing() throws FactoryConfigurationError, Exception {
 
-        File file = new File("C:\\Users\\Oleg\\IdeaProjects\\XmlParser\\resources\\request.xml");
+        File file = new File("C:\\Users\\Oleg\\IdeaProjects\\ParseUnknownXML\\resources\\request.xml");
         Stack<Map<String, String>> rowStack = parser.parseXml(file);
 
         while (!rowStack.isEmpty()) {
